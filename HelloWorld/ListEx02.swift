@@ -37,7 +37,7 @@ struct ListEx02: View {
                             .foregroundColor(.secondary)
                     }
                 }
-                .padding(.top, 20)
+                .padding(.top, 30)
             }
             .listRowSeparator(.hidden)
         }
