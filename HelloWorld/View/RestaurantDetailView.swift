@@ -66,6 +66,17 @@ struct RestaurantDetailView: View {
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 }
                 .padding(.horizontal)
+                
+                NavigationLink(destination: {
+                    MapView(location: restaurant.location)
+                        .edgesIgnoringSafeArea(.all)
+                }) {
+                    MapView(location: restaurant.location)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .frame(height: 250)
+                        .cornerRadius(25)
+                        .padding()
+                }
             }
             .navigationBarBackButtonHidden(true)
             .toolbar {
