@@ -11,6 +11,7 @@
 		E916C30429972DE400CC8220 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916C30329972DE400CC8220 /* ContentView.swift */; };
 		E916C30629972DE400CC8220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E916C30529972DE400CC8220 /* Assets.xcassets */; };
 		E916C30929972DE400CC8220 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E916C30829972DE400CC8220 /* Preview Assets.xcassets */; };
+		E965ACB6299F2A0D00D9A491 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E965ACB5299F2A0D00D9A491 /* Restaurant.swift */; };
 		E9716ABB299DEA3B000AEE33 /* StackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9716ABA299DEA3B000AEE33 /* StackDemo.swift */; };
 		E9716ABD299DEED1000AEE33 /* StackExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9716ABC299DEED1000AEE33 /* StackExercise.swift */; };
 		E9716ABF299DF4C6000AEE33 /* ListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9716ABE299DF4C6000AEE33 /* ListExample.swift */; };
@@ -24,6 +25,7 @@
 		E916C30329972DE400CC8220 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E916C30529972DE400CC8220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E916C30829972DE400CC8220 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E965ACB5299F2A0D00D9A491 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		E9716ABA299DEA3B000AEE33 /* StackDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackDemo.swift; sourceTree = "<group>"; };
 		E9716ABC299DEED1000AEE33 /* StackExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackExercise.swift; sourceTree = "<group>"; };
 		E9716ABE299DF4C6000AEE33 /* ListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample.swift; sourceTree = "<group>"; };
@@ -61,15 +63,12 @@
 		E916C30029972DE400CC8220 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				E965ACB4299F29D900D9A491 /* View */,
+				E965ACB3299F29D000D9A491 /* Model */,
 				E916C30129972DE400CC8220 /* HelloWorldApp.swift */,
 				E916C30329972DE400CC8220 /* ContentView.swift */,
 				E916C30529972DE400CC8220 /* Assets.xcassets */,
 				E916C30729972DE400CC8220 /* Preview Content */,
-				E9716ABA299DEA3B000AEE33 /* StackDemo.swift */,
-				E9716ABC299DEED1000AEE33 /* StackExercise.swift */,
-				E9716ABE299DF4C6000AEE33 /* ListExample.swift */,
-				E9716AC0299DFB5F000AEE33 /* CustomList.swift */,
-				E9716AC2299DFED6000AEE33 /* ListEx02.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -80,6 +79,26 @@
 				E916C30829972DE400CC8220 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E965ACB3299F29D000D9A491 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E965ACB5299F2A0D00D9A491 /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E965ACB4299F29D900D9A491 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9716ABA299DEA3B000AEE33 /* StackDemo.swift */,
+				E9716ABC299DEED1000AEE33 /* StackExercise.swift */,
+				E9716ABE299DF4C6000AEE33 /* ListExample.swift */,
+				E9716AC0299DFB5F000AEE33 /* CustomList.swift */,
+				E9716AC2299DFED6000AEE33 /* ListEx02.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +175,7 @@
 				E9716ABB299DEA3B000AEE33 /* StackDemo.swift in Sources */,
 				E916C30429972DE400CC8220 /* ContentView.swift in Sources */,
 				E916C30229972DE400CC8220 /* HelloWorldApp.swift in Sources */,
+				E965ACB6299F2A0D00D9A491 /* Restaurant.swift in Sources */,
 				E9716AC1299DFB5F000AEE33 /* CustomList.swift in Sources */,
 				E9716ABF299DF4C6000AEE33 /* ListExample.swift in Sources */,
 				E9716AC3299DFED6000AEE33 /* ListEx02.swift in Sources */,
