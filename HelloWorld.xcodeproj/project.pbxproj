@@ -21,6 +21,7 @@
 		E9716ABF299DF4C6000AEE33 /* ListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9716ABE299DF4C6000AEE33 /* ListExample.swift */; };
 		E9716AC1299DFB5F000AEE33 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9716AC0299DFB5F000AEE33 /* CustomList.swift */; };
 		E9716AC3299DFED6000AEE33 /* ListEx02.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9716AC2299DFED6000AEE33 /* ListEx02.swift */; };
+		E9AFC42D29A0CEEC00DB5B3F /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFC42C29A0CEEC00DB5B3F /* ReviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E9716ABE299DF4C6000AEE33 /* ListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample.swift; sourceTree = "<group>"; };
 		E9716AC0299DFB5F000AEE33 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 		E9716AC2299DFED6000AEE33 /* ListEx02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEx02.swift; sourceTree = "<group>"; };
+		E9AFC42C29A0CEEC00DB5B3F /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				E965ACB7299F484700D9A491 /* ActivityView.swift */,
 				E965ACB9299F4A3D00D9A491 /* RestaurantDetailView.swift */,
 				E965ACBE299F807100D9A491 /* MapView.swift */,
+				E9AFC42C29A0CEEC00DB5B3F /* ReviewView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				E9716ABB299DEA3B000AEE33 /* StackDemo.swift in Sources */,
 				E916C30429972DE400CC8220 /* ContentView.swift in Sources */,
 				E916C30229972DE400CC8220 /* HelloWorldApp.swift in Sources */,
+				E9AFC42D29A0CEEC00DB5B3F /* ReviewView.swift in Sources */,
 				E965ACBD299F6E8900D9A491 /* UIColor+Ext.swift in Sources */,
 				E965ACB6299F2A0D00D9A491 /* Restaurant.swift in Sources */,
 				E965ACB8299F484700D9A491 /* ActivityView.swift in Sources */,

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 struct Restaurant {
@@ -16,6 +17,7 @@ struct Restaurant {
     var description: String
     var phone: String
     var isFavorite: Bool
+    var rating: Rating = .awesome
     
     init(name: String, type: String, location: String, image: String, description: String, phone: String, isFavorite: Bool) {
         self.name = name
@@ -29,6 +31,29 @@ struct Restaurant {
     
     init() {
         self.init(name: "", type: "", location: "", image: "", description: "", phone: "", isFavorite: false)
+    }
+    
+    enum Rating: String, CaseIterable {
+        case awesome
+        case good
+        case okay
+        case bad
+        case terrible
+        
+        var image: String {
+            switch self {
+            case .awesome:
+                return "love"
+            case .good:
+                return "cool"
+            case .okay:
+                return "happy"
+            case .bad:
+                return "sad"
+            case .terrible:
+                return "angry"
+            }
+        }
     }
     
 }
