@@ -56,6 +56,10 @@ struct ReviewView: View {
                             .bold()
                             .foregroundColor(.white)
                     }
+                    .onTapGesture {
+                        self.restaurant.rating = rating
+                        self.isDisplayed = false
+                    }
                     .opacity(showRatings ? 1 : 0)
                     .offset(x: showRatings ? 0 : 1000)
                     .animation(.easeOut.delay(Double(Restaurant.Rating.allCases.firstIndex(of:

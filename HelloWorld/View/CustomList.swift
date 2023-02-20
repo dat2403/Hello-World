@@ -14,6 +14,8 @@ struct CustomList: View {
         Restaurant(name: "Homei", type: "Cafe", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", image: "homei" , description: "A little gem hidden at the corner of the street is nothing butfantastic! This place is warm and cozy. We open at 7 every morning except Sunday, and close at 9 PM. We offer a variety of coffee drinks and specialties including lattes, cappuccinos, teas, and more. We serve breakfast, lunch, and dinner in an airy open setting. Come over, have a coffee and enjoy a chit-chat with our baristas.", phone: "348-233423", isFavorite: false),
     ]
     
+    @State private var showNewRestaurant = false
+    
     var body: some View {
         NavigationView {
             List {
@@ -50,8 +52,18 @@ struct CustomList: View {
             .listStyle(.plain)
             .navigationTitle(Text("FoodPin"))
             .navigationBarTitleDisplayMode(.automatic)
+            .toolbar {
+                Button(action: {
+                    self.showNewRestaurant = true
+                }) {
+                    Image(systemName: "plus")
+                }
+            }
         }
-        .accentColor(.white)
+        .sheet(isPresented: $showNewRestaurant) {
+                NewRestaurantView()
+        }
+        .accentColor(.primary)
     }
 }
 

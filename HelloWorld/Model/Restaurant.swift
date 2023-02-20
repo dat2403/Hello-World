@@ -9,17 +9,18 @@ import Foundation
 import SwiftUI
 
 
-struct Restaurant {
-    var name: String
-    var type: String
-    var location: String
-    var image: String
-    var description: String
-    var phone: String
-    var isFavorite: Bool
-    var rating: Rating = .awesome
-    
-    init(name: String, type: String, location: String, image: String, description: String, phone: String, isFavorite: Bool) {
+class Restaurant : ObservableObject {
+    @Published var name: String
+    @Published var type: String
+    @Published var location: String
+    @Published var image: String
+    @Published var description: String
+    @Published var phone: String
+    @Published var isFavorite: Bool = false
+    @Published var rating: Rating?
+    init(name: String, type: String, location: String, image: String, description: String, phone: String,
+         isFavorite: Bool,
+         rating: Rating? = nil) {
         self.name = name
         self.type = type
         self.location = location
@@ -27,10 +28,7 @@ struct Restaurant {
         self.isFavorite = isFavorite
         self.description = description
         self.phone = phone
-    }
-    
-    init() {
-        self.init(name: "", type: "", location: "", image: "", description: "", phone: "", isFavorite: false)
+        self.rating = rating
     }
     
     enum Rating: String, CaseIterable {
