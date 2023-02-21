@@ -139,7 +139,7 @@ struct FormTextField: View {
                 .padding(.horizontal)
                 .padding(10)
                 .overlay {
-                    RoundedRectangle(cornerRadius: 5)
+                    RoundedRectangle(cornerRadius: 20)
                         .stroke(Color(.systemGray5), lineWidth: 1)
                 }
                 .padding(.vertical, 10)
